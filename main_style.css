@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'web_serveroffregular';
+    src: url('fonts/Web_Serveroff-webfont.eot');
+    src: url('fonts/Web_Serveroff-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Web_Serveroff-webfont.woff2') format('woff2'),
+         url('fonts/Web_Serveroff-webfont.woff') format('woff'),
+         url('fonts/Web_Serveroff-webfont.ttf') format('truetype'),
+         url('fonts/Web_Serveroff-webfont.svg#web_serveroffregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'web_serveroffregular','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url('images/parchemin3.jpg') no-repeat fixed;
+    background-size: cover ;
+    color: rgb(20, 20, 20);
+}
+
+#bloc_page {
+    max-width: 900px;
+    margin: auto;
+}
+
+header h1, section h1, footer h1, nav a {
+    text-transform: uppercase;
+}
+section h1 {
+    font-size: 1.7em;
+}
+
+
+
+
+/* Header & Main Menu */ 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal {
+    display: flex;
+    flex-direction: column;
+}
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -10px;
+}
+#logo img {
+    width: 100px;
+    height: auto;
+}
+header h1 {
+    margin: 0 0 0 5px;
+}
+header h2 {
+    margin-left: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav li {
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+nav a:hover {
+    color: rgb(141, 106, 83);
+    border-bottom: 3px solid rgb(141, 106, 83);
+}
+
+/* Banner */ 
+
+#banniere_image {
+    margin-top: 15px;
+    height: 250px;
+    border-radius: 10px;
+    background: url('images/odinhunt.jpg') no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: relative;
+    margin-bottom: 25px;
+}
+#banniere_description {
+    position: absolute;
+    bottom: 0;
+    width: 99.3%;
+    height: 33px;
+    padding-top: 10px;
+    padding-left: 7px;
+    background-color:rgb(15, 15, 15, 0.6);
+    color: white;
+    font-weight: normal;
+    font-size: 1.15em;
+    border-radius: 5px;
+}
+.bouton_lien {
+    position: absolute;
+    height: 27px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+    bottom: 7px;
+    right: 15px;
+    text-align: center; 
+    background-color:  rgba(180, 149, 120, 0.8);
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px; 
+}
+
+/* Section */ 
+
+section {
+    display: flex;
+    margin-bottom: 20px;
+}
+article, aside {
+    text-align: justify;
+    font-size: 1.15em;
+}
+article {
+    margin-right: 20px;
+    flex: 3;
+    background-color:rgba(180, 149, 120, 0.5);
+    box-shadow: 0px 2px 5px black;
+    border-radius: 5px;
+    padding: 10px; 
+}
+aside {
+    flex: 1.2;
+    background-color: rgba(180, 149, 120, 0.5);
+    box-shadow: 0px 2px 5px black;
+    border-radius: 5px;
+    padding: 10px; 
+    font-size: 1em;
+    margin-bottom: auto;
+}
+aside h1 {
+    text-align: center;
+}
+#photo_kanaxe {
+    text-align: center;
+}
+#reseaux_sociaux {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+#reseaux_sociaux img {
+    width: 38px;
+    height: auto;
+    margin: 2px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(141, 106, 83, 0.4);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(141, 106, 83, 0.4);
+    box-shadow: 2px 0px 5px rgb(141, 106, 83);
+}
+footer h1 {
+    font-size: 1.3em;
+}
+#liens_externes {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+#list_lien_footer {
+    display: flex;
+}
+#list_lien_footer li {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+footer ul a:hover {
+    color: rgb(141, 106, 83);
+    border-bottom: 3px solid rgb(141, 106, 83);
+}
+
+#copyright {
+    text-align: justify;
+    flex: 1.2;
+    margin-top: 5px;
+    margin-right:10px;
+}
